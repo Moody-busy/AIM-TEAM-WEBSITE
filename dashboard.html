@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIM TEAM Dashboard - Professional Presentation Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to AIM TEAM</h1>
+            <p>Transforming Ideas into Impactful Presentations</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <header>
+        <h1>AIM TEAM</h1>
+        <p>Excellence in Professional Presentations</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="admin.html">Admin Panel</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About AIM TEAM</h2>
+            <p>We are a dedicated team specializing in creating impactful professional presentations for businesses and teams. Our expertise lies in delivering high-quality, visually stunning presentations that drive results. With years of experience in the industry, we help our clients communicate their vision effectively and leave lasting impressions.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Custom Presentation Design</h3>
+                    <p>Tailored presentations that reflect your brand and message.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Business Strategy Presentations</h3>
+                    <p>Strategic presentations to drive business decisions and growth.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Training and Educational Materials</h3>
+                    <p>Engaging training modules and educational content.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Interactive Multimedia Presentations</h3>
+                    <p>Dynamic presentations with interactive elements for better engagement.</p>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <h2>Business Gallery</h2>
+            <div class="gallery">
+                <img src="https://picsum.photos/400/300?random=1" alt="Business Meeting">
+                <img src="https://picsum.photos/400/300?random=2" alt="Presentation">
+                <img src="https://picsum.photos/400/300?random=3" alt="Team Collaboration">
+                <img src="https://picsum.photos/400/300?random=4" alt="Office Environment">
+                <img src="https://picsum.photos/400/300?random=5" alt="Conference Room">
+                <img src="https://picsum.photos/400/300?random=6" alt="Digital Presentation">
+            </div>
+        </section>
+        <section id="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"AIM TEAM delivered an outstanding presentation that exceeded our expectations. Highly recommended!"</p>
+                    <cite>- John Doe, CEO</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Their expertise in multimedia presentations helped us engage our audience like never before."</p>
+                    <cite>- Jane Smith, Marketing Director</cite>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Get in touch to elevate your presentations.</p>
+            <button id="requestBtn">Request a Presentation</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 AIM TEAM. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal for Request Form -->
+    <div id="requestModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Request a Presentation</h2>
+            <form id="requestForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
